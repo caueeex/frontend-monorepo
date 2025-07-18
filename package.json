@@ -1,0 +1,27 @@
+{
+  "name": "stefanini-frontend-monorepo",
+  "version": "1.0.0",
+  "description": "Monorepo para aplicação React Native Web com pacotes compartilhados",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "yarn workspace @stefanini/app dev",
+    "build": "yarn workspace @stefanini/app build",
+    "start": "yarn workspace @stefanini/app start",
+    "test": "yarn workspaces run test",
+    "lint": "yarn workspaces run lint"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "prettier": "^3.0.0",
+    "eslint": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "yarn": ">=1.22.0"
+  }
+} 
